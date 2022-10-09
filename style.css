@@ -89,6 +89,14 @@ body {
 }
 
 /* stocks */
+.dgd-title {
+  color: #1b2a41;
+  font-size: 2rem;
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
 
 .stocks-section {
   color: #1b2a41;

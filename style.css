@@ -87,3 +87,59 @@ body {
 .footer-text {
   margin: 0.25rem 0;
 }
+
+/* stocks */
+
+.stocks-section {
+  color: #1b2a41;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+
+  padding: 4rem 0;
+}
+
+.stocks-section-title {
+  font-size: 3rem;
+  grid-column: 1/-1;
+  padding-bottom: 1rem;
+}
+
+.stocks-section-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stocks-label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.stocks-number {
+  background-color: #ddd;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.stocks-cta {
+  text-decoration: none;
+  color: #1b2a41;
+  background-color: #ddd;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+
+  grid-column: 1/-1;
+  justify-self: center;
+}

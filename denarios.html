@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GOV IUKAC EMPIRE | DNIO</title>
+    <link rel="stylesheet" href="signup-form.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container-2 nav">
+        <div class="logo">
+          <img src="./img/logo.jpg" alt="" width="250" />
+        </div>
+
+        <h2 class="logo-text">GOV IUKAC STOCK MARKET</h2>
+
+        <ul class="nav-links">
+          <li><a href="./dgd.html" class="nav-link">D.G.D</a></li>
+          <li><a href="./denarios.html" class="nav-link">DENARIOS</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- chart -->
+    <section>
+      <div class="container-2">
+        <h2 class="dgd-title">
+          DNIO <br />
+          DENARIOS
+        </h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-2 chart">
+        <canvas id="chart"></canvas>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-2 stocks-section">
+        <h2 class="stocks-section-title">Stocks</h2>
+
+        <div class="stocks-section-el">
+          <p class="stocks-label">quantity</p>
+          <p class="stocks-number">105</p>
+        </div>
+
+        <div class="empty"></div>
+
+        <div class="stocks-section-el">
+          <p class="stocks-label">buy</p>
+          <p class="stocks-number">♧ 1.05</p>
+        </div>
+
+        <div class="stocks-section-el">
+          <p class="stocks-label">limit price</p>
+          <p class="stocks-number">♧ 1.05</p>
+        </div>
+
+        <div class="stocks-section-el">
+          <p class="stocks-label">sell</p>
+          <p class="stocks-number">♧ 1.05</p>
+        </div>
+
+        <div class="stocks-section-el">
+          <p class="stocks-label">market price</p>
+          <p class="stocks-number">♧ 1.05</p>
+        </div>
+
+        <a href="#" class="stocks-cta">place order</a>
+      </div>
+    </section>
+
+    <!-- currency note -->
+    <section>
+      <div class="container-2 flag-section">
+        <img src="./img/FB_IMG_1660345914892.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- flag -->
+    <section>
+      <div class="container-2 flag-section">
+        <img src="./img/flag.jpg" alt="" />
+      </div>
+
+      <div class="container-2">
+        <h2 class="text-center">SOVEREIGN COUNTRY STATE</h2>
+        <h4 class="text-center">ABSOLUTE MONARCHY</h4>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-2 footer">
+        <p class="footer-text"><strong>FAX</strong> &nbsp; 1 281 377-0473</p>
+        <p class="footer-text"><strong>Phone</strong> &nbsp; 1 346 325-7706</p>
+        <p class="footer-text">
+          <strong>Email</strong> &nbsp; hasburgokingludwig@gmail.com
+        </p>
+        <p class="footer-text">
+          <strong>Email</strong> &nbsp; goviukac@gmail.com
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let myChart = document.getElementById('chart').getContext('2d')
+
+      let lineChart = new Chart(myChart, {
+        type: 'line',
+        data: {
+          labels: [
+            'Jan 2022',
+            'Feb 2022',
+            'Mar 2022',
+            'Apr 2022',
+            'May 2022',
+            'Jun 2022',
+            'Jul 2022',
+            'Aug 2022',
+            'sep 2022',
+            'oct 2022',
+            'nov 2022',
+            'dec 2022',
+          ],
+          datasets: [
+            {
+              label: 'DNIO price in USD',
+              data: [
+                1.12, 1.15, 1.49, 1.95, 1.71, 2.08, 1.98, 2.45, 2.65, 3.04,
+              ],
+            },
+          ],
+        },
+      })
+    </script>
+  </body>
+</html>

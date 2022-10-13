@@ -151,3 +151,25 @@ body {
   grid-column: 1/-1;
   justify-self: center;
 }
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  background: #d13751;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.nav-link {
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 2rem;
+
+  display: inline-block;
+  padding: 1rem 0;
+}

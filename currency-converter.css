@@ -1,0 +1,67 @@
+.cc-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #333;
+  gap: 2rem;
+}
+
+.cc {
+  padding: 2rem 0;
+
+  max-width: 500px;
+}
+
+.cc-el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.cc-label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cc-input {
+  box-shadow: 0 0 1px;
+  width: 50%;
+  max-width: 200px;
+  height: 4em;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border-color: #fff;
+  text-indent: 10px;
+  transition: border-color 0.4s ease-in-out;
+}
+
+.converted-cc {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.convert-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #1b2a41;
+  color: #fefefe;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.convert-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

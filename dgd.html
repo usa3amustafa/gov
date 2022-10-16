@@ -16,12 +16,16 @@
     />
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="./currency-converter.css" />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
       integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <nav>
@@ -30,11 +34,26 @@
           <img src="./img/logo.jpg" alt="" width="250" />
         </div>
 
-        <h2 class="logo-text">GOV IUKAC STOCK MARKET</h2>
+        <div class="header">
+          <a href="#" class="open-account"
+            >Open Bank Account <br />
+            in Grand Dollars</a
+          >
+          <div class="header">
+            <a href="./open-account.html" class="open-account"
+              >Open Bank Account <br />
+              in Grand Dollars</a
+            >
+            <h2 class="logo-text">GOV IUKAC STOCK MARKET</h2>
+          </div>
+        </div>
 
         <ul class="nav-links">
           <li><a href="./dgd.html" class="nav-link">D.G.D</a></li>
           <li><a href="./denarios.html" class="nav-link">DENARIOS</a></li>
+          <li>
+            <a href="./euro-imperial.html" class="nav-link">EURO IMPERIAL</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -48,6 +67,7 @@
         </h2>
       </div>
     </section>
+
     <section>
       <div class="container-2 chart">
         <canvas id="chart"></canvas>
@@ -89,6 +109,43 @@
       </div>
     </section>
 
+    <!-- currency converter -->
+    <div class="container-2 cc-main">
+      <aside>
+        <ul class="aside-links">
+          <li><a href="./dgd.html" class="aside-link">D.G.D</a></li>
+          <li><a href="./denarios.html" class="aside-link">DENARIOS</a></li>
+          <li>
+            <a href="./euro-imperial.html" class="aside-link">EURO IMPERIAL</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="cc">
+        <h2 class="logo-text">Currency Converter</h2>
+
+        <div class="cc-el">
+          <p class="cc-label">GOVT IUKAC EMPIRE <br />DUKEDOM GRAND DOLLAR</p>
+          <input type="number" class="cc-input" />
+        </div>
+
+        <div class="convert-into cc-el">
+          <p class="cc-label">convert into</p>
+          <select class="cc-countries cc-input">
+            <!-- Options tag are inserted from JavaScript -->
+          </select>
+        </div>
+
+        <div class="cc-el convert-btn-container">
+          <button class="convert-btn">Convert</button>
+        </div>
+
+        <div class="cc-el">
+          <p class="cc-label">PAKISTANI RUPEE</p>
+          <p class="converted-cc">574.00</p>
+        </div>
+      </div>
+    </div>
+
     <!-- currency note -->
     <section>
       <div class="container-2 flag-section">
@@ -121,6 +178,9 @@
       </div>
     </footer>
 
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+
     <script>
       let myChart = document.getElementById('chart').getContext('2d')
 
@@ -143,7 +203,7 @@
           ],
           datasets: [
             {
-              label: 'D.G.D price in USD',
+              label: 'D.G.D price in Grand Dollars',
               data: [
                 1.12, 1.15, 1.49, 1.95, 1.71, 2.08, 1.98, 2.45, 2.65, 3.04,
               ],

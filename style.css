@@ -15,8 +15,8 @@ body {
 }
 
 .container-2 {
-  width: 90%;
-  max-width: 1200px;
+  width: 97.5%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -34,6 +34,7 @@ body {
   font-size: 3rem;
   text-transform: uppercase;
   color: #1b2a41;
+  text-align: center;
 }
 
 .logo-img {
@@ -171,5 +172,104 @@ body {
   font-size: 2rem;
 
   display: inline-block;
+  padding: 1rem 0;
+}
+
+.header {
+  position: relative;
+
+  width: 100%;
+}
+
+.open-account {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(-50%);
+
+  text-decoration: none;
+  background-color: #1b2a41;
+  color: #fefefe;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.small-text {
+  font-size: 1.25rem;
+}
+
+.large-text {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.route-number {
+  background-color: #1b2a41;
+  color: #fefefe;
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 500px;
+
+  background-color: #fefefe;
+  color: rgb(78, 255, 78);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(78, 255, 78);
+  border-radius: 10px;
+
+  flex-direction: column;
+}
+
+.modal > a {
+  color: #1b2a41;
+  font-size: 1.5rem;
+}
+
+aside {
+  display: flex;
+  align-items: stretch;
+}
+
+.aside-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+
+  background: #d13751;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.aside-link {
+  color: #fefefe;
+  font-weight: 600;
+  font-size: 2rem;
+
+  display: block;
   padding: 1rem 0;
 }
